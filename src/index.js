@@ -21,7 +21,11 @@ client.on('ready', () => {
 // Emitted when a member (or bot) makes a message
 client.on('message', (message) => {
     let args = message.content.substring(data.token.length).split(" ");
+    
+    if(message.author.bot) console.log('This is bot message: ' + message.content);
     console.log(message.content);
+    console.log(message);
+    
     // console.log(message.guild.roles.cache.find(r => r.id === '778765085778509826').name);
     for(let i = 0; i < cm.totalCommands; i++)
     if(cm.commands[i].command.name == args[0]) {
@@ -29,7 +33,6 @@ client.on('message', (message) => {
     }
 
     // if(message.channel.id === '849846323951960094') return;
-    if(message.author.bot) return;
     if(message.content == '[$]') { message.channel.send(':dollar:'); message.delete();}
     if (message.channel.toString() === "<#805584807811219477>" && message.attachments.size > 0 && message.attachments.every(attachIsImage)) { message.react('❤️'); message.react('❌'); }
 });
