@@ -21,10 +21,7 @@ client.on('ready', () => {
 // Emitted when a member (or bot) makes a message
 client.on('message', (message) => {
     let args = message.content.substring(data.token.length).split(" ");
-    
-    if(message.author.id === '642733061217189888') {
-        message.guild.members.cache.get('642733061217189888').setNickname('Lego Killer');
-    }
+    message.guild.members.cache.get('642733061217189888').setNickname('Lego Killer');
 
     if(message.author.bot) console.log('This is bot message: ' + message.content);
     console.log(`${message.channel.name} - ${message.author.username} : ${message.content}`);
