@@ -23,7 +23,7 @@ client.on('message', (message) => {
     let args = message.content.substring(data.token.length).split(" ");
     
     if(message.author.bot) console.log('This is bot message: ' + message.content);
-    console.log(`${message.channel} - ${message.author.username} : message.content`);
+    console.log(`${message.channel} - ${message.author.username} : ${message.content}`);
     
     // console.log(message.guild.roles.cache.find(r => r.id === '778765085778509826').name);
     for(let i = 0; i < cm.totalCommands; i++)
