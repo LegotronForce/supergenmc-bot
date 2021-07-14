@@ -36,18 +36,18 @@ fs.readdirSync('src/commands/superdiscordmc').forEach(file => {
 
 commands.forEach((val, index) => {
     help.addField(`${val.name}`, `::${val.name} - ${val.description} - ${val.category}`);
-})
+});
 
-var helpCommand = {
-    name: 'help',
-    description: 'Look at all the commands and basic knowledge of the server',
-    category: 'informational',
-    runC: async(client, message, args)=>{
-        message.channel.send(help); // Then we send the embed.
-    }
-};
+// var helpCommand = {
+//     name: 'help',
+//     description: 'Look at all the commands and basic knowledge of the server',
+//     category: 'informational',
+//     runC: async(client, message, args)=>{
+//         message.channel.send(help); // Then we send the embed.
+//     }
+// };
 
-commands.push(helpCommand);
+// commands.push(helpCommand);
 totalCommands = commands.length;
 
 console.log(commands);
