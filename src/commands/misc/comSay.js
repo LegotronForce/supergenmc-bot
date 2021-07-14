@@ -8,7 +8,8 @@ var command = {
                     text += args[i] + ' '
             }
 
-            message.channel.send(text)
+            message.channel.send(text);
+            message.delete();
             console.log(`I said '${text}'`);
     }
 };
