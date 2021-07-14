@@ -1,5 +1,7 @@
 const { MessageEmbed } = require('discord.js');
+const chalk = require('chalk');
 const fs = require('fs');
+const {getTime} = require("./other");
 const dir = 'src/commands';
 
 var commands = [];
@@ -50,7 +52,12 @@ commands.forEach((val, index) => {
 // commands.push(helpCommand);
 totalCommands = commands.length;
 
-console.log(commands);
+const data = require('../resources/data.json');
+if(data.debug) {
+    for(let i = 0; i < commands.length; i++) {
+        console.log(`[COMMAND LOG - TIME: ${getTime(new Date())}] NAME: ${chalk.green(commands[i].command.name)} || DESCRIPTION: ${chalk.green(commands[i].command.description)} || CATEGORY: ${chalk.green(commands[i].command.category)}`);
+    }
+}
 
 // console.log(commands);
 // console.log(totalCommands);

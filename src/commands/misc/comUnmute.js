@@ -2,7 +2,7 @@ var command = {
     name: 'unmute',
     description: 'Mutes a person',
     category: 'misc',
-    runC: async (client, message, args) => {
+    run: async (client, message, args) => {
         if (message.author.id == '557696022004891689') {
             let role = message.guild.roles.cache.find(r => r.name === 'Muted');
             let role2 = message.guild.roles.cache.find(r => r.name === '»【Member】');

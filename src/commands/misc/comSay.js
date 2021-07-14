@@ -2,7 +2,7 @@ var command = {
     name: 'say',
     description: 'Says whatever you want!',
     category: 'misc',
-    runC: async(client, message, args)=>{
+    run: async(client, message, args)=>{
             text = '';
             for(let i = 1; i < args.length; i++) {
                     text += args[i] + ' '

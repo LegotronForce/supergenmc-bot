@@ -6,7 +6,7 @@ var command = {
     name: 'mine',
     description: 'Get some stone, iron, coal, maybe even diamonds!',
     category: 'sdmc',
-    runC: async(client, message, args) => {
+    run: async(client, message, args) => {
         console.log(`[COMMAND EXECUTE] ${message.author} used "::mine"`);
         let inventory = db.get(`user_${message.author}`).inventory;
         

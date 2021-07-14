@@ -4,7 +4,7 @@ var command = {
     name: 'info',
     description: 'Shows some info about the Discord server',
     category: 'informational',
-    runC: async(client, message, args) => {
+    run: async(client, message, args) => {
         // Create an embed
         const embed = new MessageEmbed() // Create the embed
             .setTitle("SuperGenMC Bot - Info") // Set the title to the title of the page.

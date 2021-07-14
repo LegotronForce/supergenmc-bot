@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "@replit/database": "^2.0.1",
+    "chalk": "^4.1.1",
     "discord.js": "^12.5.1",
+    "dotenv": "^10.0.0",
     "googleapis": "^80.2.0",
     "prompt-sync": "^4.2.0",
     "quick.db": "^7.1.3"

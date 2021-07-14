@@ -6,7 +6,7 @@ var command = {
     name: 'database',
     description: 'Idk what this is',
     category: 'misc',
-    runC: async(client, message, args)=>{
+    run: async(client, message, args)=>{
         if(args[1] == 'read') {
             message.channel.send(db.get(client.user.id));
         } else if(args[1] == 'set') {
