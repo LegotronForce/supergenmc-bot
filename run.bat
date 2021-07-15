@@ -24,5 +24,5 @@ node . >logs/%file%
 goto filename
 
 :get_node_files
-npm i
+npm i >logs/%file%
 goto start
