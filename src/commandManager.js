@@ -44,7 +44,7 @@ commands.forEach((val, index) => {
 //     name: 'help',
 //     description: 'Look at all the commands and basic knowledge of the server',
 //     category: 'informational',
-//     runC: async(client, message, args)=>{
+//     run: async(client, message, args)=>{
 //         message.channel.send(help); // Then we send the embed.
 //     }
 // };

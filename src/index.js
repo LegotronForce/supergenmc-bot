@@ -5,7 +5,9 @@ const {
 const cm = require('./commandManager');
 const data = require("../resources/data.json");
 const client = new Client();
-const {getTime} = require("./other");
+const {
+    getTime
+} = require("./other");
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -23,6 +25,8 @@ client.on('ready', () => {
 
 // Emitted when a member (or bot) makes a message 
 client.on('message', (message) => {
+    // lego.roles.remove(role);
+
     let args = message.content.substring(data.token.length).split(" ");
     if (message.author.bot) {
         console.log(`[BOT MESSAGE - TIME: ${getTime(new Date())}] ${message.channel.name} - ${message.author.username} : ${message.content}`);
