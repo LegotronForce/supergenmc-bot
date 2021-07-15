@@ -1,0 +1,33 @@
+{
+    "crafting_table": {
+        "iron_pick" : {
+            "ingredients": {"iron_ingot": 3, "stick": 2, "rope": 1},
+            "obtainable_once": true,
+            "item_type": "pickaxe"
+        },
+
+        "furnace": {
+            "ingredients":{"cobblestone": 8},
+            "obtainable_once":true,
+            "item_type": "recipe_creator"
+        }
+    },
+
+    "furnace": {
+        "iron_ingot": {
+            "ingredients":{"coal": 1, "iron_ore": 1},
+            "obtainable_once": false,
+            "item_type": "item"
+        },
+        "gold_ingot": {
+            "ingredients":{"coal": 1, "gold_ore": 1},
+            "obtainable_once": false,
+            "item_type": "item"
+        },
+        "obium": {
+            "ingredients":{"coal": 1, "gold_ore": 1},
+            "obtainable_once": false,
+            "item_type": "item"
+        }
+    }
+}

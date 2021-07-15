@@ -20,7 +20,7 @@ if exist node_modules\ (
 rem		makes log in /logs then starts bot
 cls
 echo Bot is starting
-npm start >logs/%file%
+node . >logs/%file%
 goto filename
 
 :get_node_files
